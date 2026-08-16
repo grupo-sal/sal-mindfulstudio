@@ -252,6 +252,35 @@ function Index() {
         </div>
       </section>
 
+      <section className="sal-section" id="galeria">
+        <div className="sal-container">
+          <div className="sal-reveal" style={{ maxWidth: 640, marginBottom: 56 }}>
+            <span className="sal-eyebrow">Galeria</span>
+            <div className="sal-divider" />
+            <h2 className="sal-h2">O estúdio, por dentro.</h2>
+            <p className="sal-body" style={{ marginTop: 18 }}>
+              Luz suave, madeira, silêncio e equipamento profissional. Um espaço pensado para te
+              sentires em casa desde a primeira respiração.
+            </p>
+          </div>
+
+          <div className="sal-galeria sal-reveal">
+            {galeria.map((g, i) => (
+              <figure className="sal-galeria-item" key={g.src}>
+                <img src={g.src} alt={g.alt} loading="lazy" width={1024} height={1280} />
+                <figcaption>{String(i + 1).padStart(2, "0")} — {g.legenda}</figcaption>
+              </figure>
+            ))}
+          </div>
+
+          <div className="sal-galeria-more sal-reveal">
+            <a href="https://www.instagram.com/salmindfulstudio/" target="_blank" rel="noopener">
+              Ver mais no Instagram <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section className="sal-section sal-dark" id="visita">
         <div className="sal-container">
           <span className="sal-eyebrow">Visita-nos</span>
@@ -276,16 +305,9 @@ function Index() {
                   >
                     Como chegar
                   </a>
-                  <a
-                    href="https://www.instagram.com/salmindfulstudio/"
-                    target="_blank"
-                    rel="noopener"
-                    className="sal-btn sal-btn-outline"
-                  >
-                    Seguir no Instagram
-                  </a>
                 </div>
               </div>
+
 
               <table className="sal-horario">
                 <tbody>
