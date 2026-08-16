@@ -101,6 +101,7 @@ function Index() {
     ["#sobre", "Sobre"],
     ["#aulas", "Aulas"],
     ["#porque", "Porquê nós"],
+    ["#galeria", "Galeria"],
     ["#visita", "Visita-nos"],
   ];
 
