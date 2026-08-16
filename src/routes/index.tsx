@@ -1,6 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import logoAsset from "@/assets/sal-logo.png.asset.json";
+import galeria1 from "@/assets/galeria-1.jpg.asset.json";
+import galeria2 from "@/assets/galeria-2.jpg.asset.json";
+import galeria3 from "@/assets/galeria-3.jpg.asset.json";
+import galeria4 from "@/assets/galeria-4.jpg.asset.json";
+
+const galeria = [
+  { src: galeria1.url, alt: "Sala de aulas do SAL Mindful Studio", legenda: "A sala" },
+  { src: galeria2.url, alt: "Reformer de Pilates no estúdio", legenda: "Reformer" },
+  { src: galeria3.url, alt: "Momento de respiração consciente numa aula", legenda: "Respiração" },
+  { src: galeria4.url, alt: "Aluna em prática de Yoga no estúdio", legenda: "Prática" },
+];
+
 
 const TITLE = "SAL Mindful Studio | Yoga & Pilates em Espinho";
 const DESC =
