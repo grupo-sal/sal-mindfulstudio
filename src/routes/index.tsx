@@ -312,10 +312,8 @@ function Index() {
       </section>
 
       <section className="sal-cta">
-        <div className="sal-container" style={{ position: "relative" }}>
-          <span className="sal-eyebrow" style={{ display: "block", marginBottom: 22 }}>
-            Marcações
-          </span>
+        <div className="sal-cta-frame sal-reveal">
+          <span className="sal-eyebrow sal-cta-eyebrow">Marcações</span>
           <h2>
             O teu momento <em>começa aqui.</em>
           </h2>
@@ -326,8 +324,14 @@ function Index() {
           <a href={MARCACOES} target="_blank" rel="noopener" className="sal-btn sal-btn-primary">
             Marcar a minha aula
           </a>
+          <div className="sal-cta-meta">
+            <span>Vagas limitadas por aula</span>
+            <span className="sal-cta-dot" />
+            <span>Acompanhamento personalizado</span>
+          </div>
         </div>
       </section>
+
 
       <footer className="sal-footer">
         <div className="sal-container">
