@@ -1,6 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import logoAsset from "@/assets/sal-logo.png.asset.json";
+import galeria1 from "@/assets/galeria-1.jpg.asset.json";
+import galeria2 from "@/assets/galeria-2.jpg.asset.json";
+import galeria3 from "@/assets/galeria-3.jpg.asset.json";
+import galeria4 from "@/assets/galeria-4.jpg.asset.json";
+
+const galeria = [
+  { src: galeria1.url, alt: "Sala de aulas do SAL Mindful Studio", legenda: "A sala" },
+  { src: galeria2.url, alt: "Reformer de Pilates no estúdio", legenda: "Reformer" },
+  { src: galeria3.url, alt: "Momento de respiração consciente numa aula", legenda: "Respiração" },
+  { src: galeria4.url, alt: "Aluna em prática de Yoga no estúdio", legenda: "Prática" },
+];
+
 
 const TITLE = "SAL Mindful Studio | Yoga & Pilates em Espinho";
 const DESC =
@@ -89,6 +101,7 @@ function Index() {
     ["#sobre", "Sobre"],
     ["#aulas", "Aulas"],
     ["#porque", "Porquê nós"],
+    ["#galeria", "Galeria"],
     ["#visita", "Visita-nos"],
   ];
 
@@ -252,6 +265,35 @@ function Index() {
         </div>
       </section>
 
+      <section className="sal-section" id="galeria">
+        <div className="sal-container">
+          <div className="sal-reveal" style={{ maxWidth: 640, marginBottom: 56 }}>
+            <span className="sal-eyebrow">Galeria</span>
+            <div className="sal-divider" />
+            <h2 className="sal-h2">O estúdio, por dentro.</h2>
+            <p className="sal-body" style={{ marginTop: 18 }}>
+              Luz suave, madeira, silêncio e equipamento profissional. Um espaço pensado para te
+              sentires em casa desde a primeira respiração.
+            </p>
+          </div>
+
+          <div className="sal-galeria sal-reveal">
+            {galeria.map((g, i) => (
+              <figure className="sal-galeria-item" key={g.src}>
+                <img src={g.src} alt={g.alt} loading="lazy" width={1024} height={1280} />
+                <figcaption>{String(i + 1).padStart(2, "0")} — {g.legenda}</figcaption>
+              </figure>
+            ))}
+          </div>
+
+          <div className="sal-galeria-more sal-reveal">
+            <a href="https://www.instagram.com/salmindfulstudio/" target="_blank" rel="noopener">
+              Ver mais no Instagram <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section className="sal-section sal-dark" id="visita">
         <div className="sal-container">
           <span className="sal-eyebrow">Visita-nos</span>
@@ -276,16 +318,9 @@ function Index() {
                   >
                     Como chegar
                   </a>
-                  <a
-                    href="https://www.instagram.com/salmindfulstudio/"
-                    target="_blank"
-                    rel="noopener"
-                    className="sal-btn sal-btn-outline"
-                  >
-                    Seguir no Instagram
-                  </a>
                 </div>
               </div>
+
 
               <table className="sal-horario">
                 <tbody>
@@ -312,10 +347,8 @@ function Index() {
       </section>
 
       <section className="sal-cta">
-        <div className="sal-container" style={{ position: "relative" }}>
-          <span className="sal-eyebrow" style={{ display: "block", marginBottom: 22 }}>
-            Marcações
-          </span>
+        <div className="sal-cta-frame sal-reveal">
+          <span className="sal-eyebrow sal-cta-eyebrow">Marcações</span>
           <h2>
             O teu momento <em>começa aqui.</em>
           </h2>
@@ -326,8 +359,14 @@ function Index() {
           <a href={MARCACOES} target="_blank" rel="noopener" className="sal-btn sal-btn-primary">
             Marcar a minha aula
           </a>
+          <div className="sal-cta-meta">
+            <span>Vagas limitadas por aula</span>
+            <span className="sal-cta-dot" />
+            <span>Acompanhamento personalizado</span>
+          </div>
         </div>
       </section>
+
 
       <footer className="sal-footer">
         <div className="sal-container">
