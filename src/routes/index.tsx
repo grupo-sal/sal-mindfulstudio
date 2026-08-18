@@ -55,11 +55,11 @@ const porque = [
 
 const horario = [
   ["Domingo", "Encerrado"],
-  ["Segunda", "7h – 20h"],
-  ["Terça", "7h – 20h"],
-  ["Quarta", "7h – 20h"],
-  ["Quinta", "7h – 20h"],
-  ["Sexta", "7h – 20h"],
+  ["Segunda", "6h – 20h"],
+  ["Terça", "6h – 20h"],
+  ["Quarta", "6h – 20h"],
+  ["Quinta", "6h – 20h"],
+  ["Sexta", "6h – 20h"],
   ["Sábado", "8h30 – 13h"],
 ];
 
@@ -130,7 +130,7 @@ function Index() {
               className="sal-btn sal-btn-outline"
               style={{ padding: "11px 24px" }}
             >
-              Marcar aula
+              Pré-inscrição
             </a>
           </nav>
         </div>
@@ -401,7 +401,7 @@ function Index() {
                 </li>
                 <li>
                   <a href={MARCACOES} target="_blank" rel="noopener">
-                    Marcar aula
+                    Pré-inscrição
                   </a>
                 </li>
                 <li>Rua José Novo, n.º 87, Espinho</li>
