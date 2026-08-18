@@ -77,11 +77,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "SAL Mindful Studio | Yoga & Pilates em Espinho" },
+      { title: "SAL Mindful Studio | Yoga, Pilates & Aulas de Grupo em Espinho" },
       {
         name: "description",
         content:
-          "Estúdio de Yoga e Pilates aberto em Espinho. Movimento consciente, respiração controlada e mobilidade sem esforço.",
+          "Estúdio de Yoga, Pilates e aulas de grupo em Espinho. Movimento consciente, respiração controlada e mobilidade sem esforço.",
       },
       { name: "author", content: "SAL Mindful Studio" },
       { property: "og:type", content: "website" },
@@ -97,7 +97,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Work+Sans:wght@300;400;500;600&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;500;600;700&display=swap",
       },
       { rel: "icon", type: "image/png", href: "/favicon.png" },
     ],
