@@ -43,7 +43,7 @@ const aulas = [
   { icon: "🧘", nome: "Yoga", texto: "Corpo e mente num só. Flexibilidade, equilíbrio e força — para todos os níveis, do primeiro toque no tapete a quem já o sabe de cor." },
   { icon: "✨", nome: "Sculpt", texto: "Séries de repetições controladas com cargas leves, para tonificar pernas, glúteos e braços sem nunca exagerar." },
   { icon: "🙆‍♀️", nome: "Stretch", texto: "Alonga, alivia a tensão acumulada e devolve amplitude às articulações, com trabalho de mobilidade guiado e progressivo." },
-  { icon: "✅", nome: "Pilates de Aparelhos", texto: "Reformer e Wall Units, em grupo ou sessões privadas. Força, postura e flexibilidade com precisão e segurança — ideal também para recuperação de lesões." },
+  { icon: "🎯", nome: "Pilates de Aparelhos", texto: "Reformer e Wall Units, em grupo ou sessões privadas. Força, postura e flexibilidade com precisão e segurança — ideal também para recuperação de lesões." },
 ];
 
 const porque = [
@@ -141,19 +141,19 @@ function Index() {
           <div className="sal-hero-grid">
             <div className="sal-reveal in">
               <span className="sal-status">
-                <i /> Estúdio aberto em Espinho
+                <i /> Estúdio em Espinho
               </span>
               <h1>
                 O lugar onde <em>voltas</em> a ti.
               </h1>
               <p className="sal-lead">
-                Yoga e Pilates em Espinho, para um movimento mais consciente, respiração controlada
+                Yoga, Pilates e aulas de grupo em Espinho, para um movimento mais consciente, respiração controlada
                 e mobilidade sem esforço. Com proximidade, seriedade e o profissionalismo que nos
                 caracteriza.
               </p>
               <div className="sal-hero-actions">
                 <a href={MARCACOES} target="_blank" rel="noopener" className="sal-btn sal-btn-primary">
-                  Marcar a minha aula
+                  Pré-inscrição
                 </a>
                 <a href="#aulas" className="sal-btn sal-btn-outline">
                   Ver as aulas
@@ -206,7 +206,7 @@ function Index() {
               <div className="sal-pilar">
                 <span className="num">03</span>
                 <h4>Profissionalismo</h4>
-                <p>O rigor técnico do Pilates de aparelhos aliado à presença consciente do Yoga.</p>
+                <p>O rigor técnico do Pilates de aparelhos aliado à presença consciente das nossas aulas de bem-estar.</p>
               </div>
             </div>
           </div>
@@ -272,7 +272,7 @@ function Index() {
             <div className="sal-divider" />
             <h2 className="sal-h2">O estúdio, por dentro.</h2>
             <p className="sal-body" style={{ marginTop: 18 }}>
-              Luz suave, madeira, silêncio e equipamento profissional. Um espaço pensado para te
+              Luz suave, silêncio e equipamento profissional. Um espaço pensado para te
               sentires em casa desde a primeira respiração.
             </p>
           </div>
@@ -357,7 +357,7 @@ function Index() {
             Espinho.
           </p>
           <a href={MARCACOES} target="_blank" rel="noopener" className="sal-btn sal-btn-primary">
-            Marcar a minha aula
+            Pré-inscrição
           </a>
           <div className="sal-cta-meta">
             <span>Vagas limitadas por aula</span>
@@ -375,7 +375,7 @@ function Index() {
               <span className="sal-logo">
                 SAL <span>·</span> Mindful Studio
               </span>
-              <p style={{ maxWidth: "34ch" }}>Yoga e Pilates em Espinho. O lugar onde voltas a ti.</p>
+              <p style={{ maxWidth: "34ch" }}>Yoga, Pilates e aulas de grupo em Espinho. O lugar onde voltas a ti.</p>
             </div>
             <div>
               <div className="sal-col-title">Navegação</div>
