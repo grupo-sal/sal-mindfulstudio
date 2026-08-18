@@ -171,8 +171,8 @@
   --ring: var(--dourado);
   --radius: 0.125rem;
 
-  --serif: "Anton", Impact, sans-serif;
-  --sans: "Montserrat", system-ui, sans-serif;
+  --serif: "Fraunces", Georgia, serif;
+  --sans: "Work Sans", system-ui, sans-serif;
   --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
@@ -204,9 +204,9 @@ body {
   overflow-x: hidden;
 }
 
-.sal h1, .sal h2, .sal h3, .sal h4, .sal-eyebrow, .sal-logo {
+.sal h1, .sal h2, .sal h3, .sal h4 {
   font-family: var(--serif);
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0.01em;
   line-height: 1.15;
 }
@@ -265,7 +265,7 @@ body {
   box-shadow: 0 1px 0 oklch(0.93 0.014 30 / 8%);
 }
 .sal-nav-row { display: flex; align-items: center; justify-content: space-between; }
-.sal-logo { font-family: var(--serif); font-weight: 700; font-size: 1.4rem; letter-spacing: 0.04em; }
+.sal-logo { font-family: var(--serif); font-size: 1.4rem; letter-spacing: 0.04em; }
 .sal-logo span { color: var(--dourado); }
 .sal-links { display: flex; gap: 38px; align-items: center; }
 .sal-links a {
@@ -340,7 +340,7 @@ body {
 @media (max-width: 850px) { .sal-sobre-grid { grid-template-columns: 1fr; gap: 40px; } }
 .sal-h2 { font-size: clamp(2rem, 3.4vw, 2.8rem); }
 .sal-lead-text {
-  font-size: 1.2rem; font-family: var(--sans); font-style: italic;
+  font-size: 1.2rem; font-family: var(--serif); font-style: italic;
   line-height: 1.5; margin-bottom: 24px;
 }
 .sal-body { color: var(--creme-suave); max-width: 56ch; }
@@ -348,7 +348,7 @@ body {
 .sal-pilares { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 56px; }
 @media (max-width: 600px) { .sal-pilares { grid-template-columns: 1fr; } }
 .sal-pilar { border-top: 1px solid var(--border); padding-top: 20px; }
-.sal-pilar .num { font-family: var(--sans); font-style: italic; color: var(--dourado); font-size: 1.1rem; }
+.sal-pilar .num { font-family: var(--serif); font-style: italic; color: var(--dourado); font-size: 1.1rem; }
 .sal-pilar h4 { margin: 10px 0 8px; font-size: 1.05rem; }
 .sal-pilar p { font-size: 0.92rem; color: var(--creme-suave); }
 
@@ -372,14 +372,14 @@ body {
 @media (max-width: 850px) { .sal-porque-inner { grid-template-columns: 1fr; gap: 40px; } }
 .sal-porque-item { display: flex; gap: 24px; padding: 26px 0; border-bottom: 1px solid var(--border); }
 .sal-porque-item:first-child { border-top: 1px solid var(--border); }
-.sal-porque-item .mark { font-family: var(--sans); font-style: italic; color: var(--dourado); font-size: 1.3rem; width: 36px; flex-shrink: 0; }
+.sal-porque-item .mark { font-family: var(--serif); font-style: italic; color: var(--dourado); font-size: 1.3rem; width: 36px; flex-shrink: 0; }
 .sal-porque-item h4 { font-size: 1.08rem; margin-bottom: 6px; }
 .sal-porque-item p { font-size: 0.9rem; color: var(--creme-suave); }
 
 /* visita */
 .sal-visita-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: start; }
 @media (max-width: 900px) { .sal-visita-grid { grid-template-columns: 1fr; gap: 48px; } }
-.sal-endereco { font-family: var(--sans); font-style: italic; font-size: 1.2rem; margin-top: 6px; }
+.sal-endereco { font-family: var(--serif); font-style: italic; font-size: 1.2rem; margin-top: 6px; }
 .sal-horario { width: 100%; border-collapse: collapse; margin-top: 30px; }
 .sal-horario td { padding: 13px 4px; font-size: 0.92rem; border-bottom: 1px solid var(--border); color: var(--creme-suave); }
 .sal-horario td:last-child { text-align: right; }
