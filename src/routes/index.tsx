@@ -14,9 +14,9 @@ const galeria = [
 ];
 
 
-const TITLE = "SAL Mindful Studio | Yoga & Pilates em Espinho";
+const TITLE = "SAL Mindful Studio | Yoga, Pilates & Aulas de Grupo em Espinho";
 const DESC =
-  "SAL Mindful Studio — estúdio de Yoga e Pilates aberto em Espinho. Movimento consciente, respiração controlada e mobilidade sem esforço. Marca a tua aula.";
+  "SAL Mindful Studio — estúdio de Yoga, Pilates e aulas de grupo em Espinho. Movimento consciente, respiração controlada e mobilidade sem esforço. Marca a tua aula.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
