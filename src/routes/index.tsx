@@ -130,7 +130,7 @@ function Index() {
               className="sal-btn sal-btn-outline"
               style={{ padding: "11px 24px" }}
             >
-              Pré-inscrição
+              Marcar aula
             </a>
           </nav>
         </div>
@@ -401,7 +401,7 @@ function Index() {
                 </li>
                 <li>
                   <a href={MARCACOES} target="_blank" rel="noopener">
-                    Pré-inscrição
+                    Marcar aula
                   </a>
                 </li>
                 <li>Rua José Novo, n.º 87, Espinho</li>
