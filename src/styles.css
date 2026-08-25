@@ -301,17 +301,29 @@ body {
     var(--verde);
 }
 .sal-hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 60px; align-items: center; width: 100%; }
-@media (max-width: 900px) { .sal-hero-grid { grid-template-columns: 1fr; } }
-.sal-hero h1 { font-size: clamp(2.6rem, 5.4vw, 4.6rem); max-width: 11.5ch; font-weight: 300; }
-.sal-hero h1 em { font-style: italic; color: var(--dourado); font-weight: 400; }
-.sal-lead { max-width: 46ch; margin-top: 26px; font-size: 1.08rem; color: var(--creme-suave); }
-.sal-hero-actions { display: flex; gap: 18px; margin-top: 44px; flex-wrap: wrap; }
-.sal-hero-visual { position: relative; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; }
+.sal-hero-visual { order: 2; position: relative; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; }
+.sal-hero-grid > .sal-reveal.in:last-child { order: 1; }
 .sal-logo-mark {
-  width: 92%; max-width: 520px;
+  width: 78%; max-width: 420px;
   filter: drop-shadow(0 0 40px oklch(0.93 0.014 30 / 8%));
   animation: sal-breathe 8s ease-in-out infinite;
 }
+@media (max-width: 900px) {
+  .sal-hero-grid { grid-template-columns: 1fr; gap: 28px; text-align: center; }
+  .sal-hero-visual { order: -1; aspect-ratio: auto; margin-bottom: 8px; }
+  .sal-hero-grid > .sal-reveal.in:last-child { order: 1; }
+  .sal-logo-mark { width: 120px; max-width: 34vw; }
+  .sal-status { margin-bottom: 22px; }
+  .sal-hero-actions { justify-content: center; }
+}
+@media (max-width: 700px) {
+  .sal-logo-mark { width: 100px; max-width: 30vw; }
+}
+.sal-hero h1 { font-size: clamp(2.6rem, 5.4vw, 4.6rem); max-width: 11.5ch; font-weight: 300; }
+.sal-hero h1 em { font-style: italic; color: var(--dourado); font-weight: 400; }
+.sal-lead { max-width: 46ch; margin-top: 26px; font-size: 1.08rem; color: var(--creme-suave); }
+@media (max-width: 900px) { .sal-lead { margin-left: auto; margin-right: auto; } }
+.sal-hero-actions { display: flex; gap: 18px; margin-top: 44px; flex-wrap: wrap; }
 @keyframes sal-breathe {
   0%, 100% { transform: scale(1); opacity: 0.95; }
   50% { transform: scale(1.025); opacity: 1; }
