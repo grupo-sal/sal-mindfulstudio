@@ -139,6 +139,10 @@ function Index() {
       <section className="sal-hero" id="topo">
         <div className="sal-container">
           <div className="sal-hero-grid">
+            <div className="sal-hero-visual sal-reveal in">
+              <img className="sal-logo-mark" src={logoAsset.url} alt="SAL Mindful Studio — logótipo" />
+            </div>
+
             <div className="sal-reveal in">
               <span className="sal-status">
                 <i /> Estúdio em Espinho
@@ -159,10 +163,6 @@ function Index() {
                   Ver as aulas
                 </a>
               </div>
-            </div>
-
-            <div className="sal-hero-visual sal-reveal in">
-              <img className="sal-logo-mark" src={logoAsset.url} alt="SAL Mindful Studio — logótipo" />
             </div>
           </div>
         </div>
