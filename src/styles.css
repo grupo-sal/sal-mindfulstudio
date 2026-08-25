@@ -309,9 +309,9 @@ body {
   animation: sal-breathe 8s ease-in-out infinite;
 }
 @media (max-width: 900px) {
-  .sal-hero-grid { grid-template-columns: 1fr; gap: 28px; text-align: center; }
-  .sal-hero-visual { order: -1; aspect-ratio: auto; margin-bottom: 6px; margin-top: 18px; }
-  .sal-hero-grid > .sal-reveal.in:last-child { order: 1; }
+  .sal-hero-grid { grid-template-columns: 1fr; gap: 28px; text-align: center; justify-items: center; }
+  .sal-hero-visual { order: -1; aspect-ratio: auto; margin-bottom: 6px; margin-top: 18px; width: 100%; }
+  .sal-hero-grid > .sal-reveal.in:last-child { order: 1; width: 100%; }
   .sal-logo-mark { width: 132px; max-width: 32vw; }
   .sal-status { margin-bottom: 22px; }
   .sal-hero-actions { justify-content: center; }
