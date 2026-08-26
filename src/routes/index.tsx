@@ -410,7 +410,7 @@ function Index() {
           </div>
           <div className="sal-footer-bottom">
             <span>© {new Date().getFullYear()} SAL Mindful Studio. Todos os direitos reservados.</span>
-            <span>Espinho, Portugal</span>
+            <span>Espinho, Portugl</span>
           </div>
         </div>
       </footer>
