@@ -1,16 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import logoAsset from "@/assets/sal-logo-eye.png.asset.json";
-import galeria1 from "@/assets/galeria-1.jpg.asset.json";
-import galeria2 from "@/assets/galeria-2.jpg.asset.json";
-import galeria3 from "@/assets/galeria-3.jpg.asset.json";
-import galeria4 from "@/assets/galeria-4.jpg.asset.json";
+import salaGrupo from "@/assets/sala-grupo.png.asset.json";
+import reformer from "@/assets/reformer.png.asset.json";
 
 const galeria = [
-  { src: galeria1.url, alt: "Sala de aulas do SAL Mindful Studio", legenda: "A sala" },
-  { src: galeria2.url, alt: "Reformer de Pilates no estúdio", legenda: "Reformer" },
-  { src: galeria3.url, alt: "Momento de respiração consciente numa aula", legenda: "Respiração" },
-  { src: galeria4.url, alt: "Aluna em prática de Yoga no estúdio", legenda: "Prática" },
+  { src: salaGrupo.url, alt: "Sala de Aulas de Grupo do SAL Mindful Studio", legenda: "A sala" },
+  { src: reformer.url, alt: "Reformer de Pilates no estúdio", legenda: "Reformer" },
 ];
 
 
@@ -280,7 +276,7 @@ function Index() {
           <div className="sal-galeria sal-reveal">
             {galeria.map((g, i) => (
               <figure className="sal-galeria-item" key={g.src}>
-                <img src={g.src} alt={g.alt} loading="lazy" width={1024} height={1280} />
+                <img src={g.src} alt={g.alt} loading="lazy" width={1400} height={1120} />
                 <figcaption>{String(i + 1).padStart(2, "0")} — {g.legenda}</figcaption>
               </figure>
             ))}

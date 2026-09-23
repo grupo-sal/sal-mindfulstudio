@@ -428,8 +428,8 @@ body {
 }
 
 /* galeria */
-.sal-galeria { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
-@media (max-width: 900px) { .sal-galeria { grid-template-columns: repeat(2, 1fr); } }
+.sal-galeria { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+@media (max-width: 700px) { .sal-galeria { grid-template-columns: 1fr; } }
 .sal-galeria-item { position: relative; overflow: hidden; border: 1px solid var(--border); }
 .sal-galeria-item img {
   width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block;
