@@ -265,7 +265,7 @@ body {
   box-shadow: 0 1px 0 oklch(0.93 0.014 30 / 8%);
 }
 .sal-nav-row { display: flex; align-items: center; justify-content: space-between; }
-.sal-logo { font-family: var(--serif); font-size: 1.4rem; letter-spacing: 0.04em; }
+.sal-logo { font-family: "Montserrat", var(--serif); font-size: 1.4rem; font-weight: 500; letter-spacing: 0.04em; }
 .sal-logo span { color: var(--dourado); }
 .sal-links { display: flex; gap: 38px; align-items: center; }
 .sal-links a {
@@ -313,7 +313,7 @@ body {
   .sal-hero-visual { order: -1; aspect-ratio: auto; margin-bottom: 6px; margin-top: 18px; width: 100%; }
   .sal-hero-grid > .sal-reveal.in:last-child { order: 1; width: 100%; display: flex; flex-direction: column; align-items: center; }
   .sal-logo-mark { width: 132px; max-width: 32vw; }
-  .sal-status { margin-bottom: 22px; }
+  .sal-status { margin-bottom: 10px; }
   .sal-hero h1 { max-width: 16ch; margin-left: auto; margin-right: auto; }
   .sal-hero-actions { justify-content: center; width: 100%; }
 }
@@ -335,9 +335,16 @@ body {
   display: inline-flex; align-items: center; gap: 10px;
   padding: 8px 18px; border: 1px solid var(--border); border-radius: 40px;
   font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--creme-suave); margin-bottom: 32px;
+  color: var(--creme-suave); margin-bottom: 14px;
 }
 .sal-status i { width: 7px; height: 7px; border-radius: 50%; background: var(--dourado); display: block; }
+.sal-abertura {
+  display: inline-flex; align-items: center; gap: 12px;
+  margin-bottom: 32px;
+  font-size: 0.68rem; letter-spacing: 0.26em; text-transform: uppercase;
+  color: var(--dourado);
+}
+.sal-abertura .linha { width: 30px; height: 1px; background: oklch(0.73 0.077 85 / 55%); }
 .sal-scroll-cue {
   position: absolute; left: 32px; bottom: 36px; display: flex; align-items: center; gap: 12px;
   font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--creme-suave);
