@@ -3,14 +3,14 @@ import { useEffect, useState } from "react";
 import { logoDataUrl, reformerDataUrl, salaGrupoDataUrl } from "@/assets/embedded-images";
 
 const galeria = [
-  { src: salaGrupoDataUrl, alt: "Sala de Aulas de Grupo do SAL Mindful Studio", legenda: "a sala de grupo" },
-  { src: reformerDataUrl, alt: "Sala de Pilates 1:1 com Reformer no SAL Mindful Studio", legenda: "sala de pilates 1:1" },
+  { src: salaGrupoDataUrl, alt: "Sala de Aulas de Grupo do SAL — Mindful Studio", legenda: "a sala de grupo" },
+  { src: reformerDataUrl, alt: "Sala de Pilates 1:1 com Reformer no SAL — Mindful Studio", legenda: "sala de pilates 1:1" },
 ];
 
 
-const TITLE = "SAL Mindful Studio | Yoga, Pilates e Aulas de Grupo em Espinho";
+const TITLE = "SAL — Mindful Studio | Yoga, Pilates e Aulas de Grupo em Espinho";
 const DESC =
-  "SAL Mindful Studio — estúdio de Yoga, Pilates e Aulas de Grupo em Espinho. Movimento consciente, respiração controlada e mobilidade sem esforço. Marca a tua aula.";
+  "SAL — Mindful Studio — estúdio de Yoga, Pilates e Aulas de Grupo em Espinho. Movimento consciente, respiração controlada e mobilidade sem esforço. Marca a tua aula.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -134,7 +134,7 @@ function Index() {
         <div className="sal-container">
           <div className="sal-hero-grid">
             <div className="sal-hero-visual sal-reveal in">
-              <img className="sal-logo-mark" src={logoDataUrl} alt="SAL Mindful Studio — logótipo" />
+              <img className="sal-logo-mark" src={logoDataUrl} alt="SAL — Mindful Studio — logótipo" />
             </div>
 
             <div className="sal-reveal in">
@@ -190,7 +190,7 @@ function Index() {
               seriedade e profissionalismo que nos caracterizam em tudo o que fazemos.
             </p>
             <p className="sal-body">
-              O SAL Mindful Studio é, em Espinho, o espaço onde o movimento deixa de ser mais uma
+              O SAL — Mindful Studio é, em Espinho, o espaço onde o movimento deixa de ser mais uma
               tarefa do dia e passa a ser um momento só teu: respiração consciente, força
               construída com intenção e um corpo que aprende a mover-se sem pressa.
             </p>
@@ -342,7 +342,7 @@ function Index() {
                 src="https://www.google.com/maps?q=Rua+Jos%C3%A9+Novo+87,+4500-479+Silvalde,+Espinho&output=embed"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Mapa — SAL Mindful Studio, Espinho"
+                title="Mapa — SAL — Mindful Studio, Espinho"
               />
             </div>
           </div>
@@ -356,7 +356,7 @@ function Index() {
             O teu momento <em>começa aqui.</em>
           </h2>
           <p>
-            Escolhe a aula, marca o teu lugar e vem mover-te connosco no SAL Mindful Studio, em
+            Escolhe a aula, marca o teu lugar e vem mover-te connosco no SAL — Mindful Studio, em
             Espinho.
           </p>
           <a href={MARCACOES} target="_blank" rel="noopener" className="sal-btn sal-btn-primary">
@@ -412,7 +412,7 @@ function Index() {
             </div>
           </div>
           <div className="sal-footer-bottom">
-            <span>© {new Date().getFullYear()} SAL Mindful Studio. Todos os direitos reservados.</span>
+            <span>© {new Date().getFullYear()} SAL — Mindful Studio. Todos os direitos reservados.</span>
             <span>Espinho, Portugal</span>
           </div>
         </div>
