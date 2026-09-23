@@ -362,9 +362,9 @@ function Index() {
             QUERO UMA VAGA
           </a>
           <div className="sal-cta-meta">
-            <span>AULAS EM PEQUENOS GRUPOS</span>
+            <span>PEQUENOS GRUPOS</span>
             <span className="sal-cta-dot" />
-            <span>Acompanhamento personalizado</span>
+            <span>PILATES 1:1</span>
           </div>
         </div>
       </section>
