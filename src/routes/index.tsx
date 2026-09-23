@@ -190,7 +190,7 @@ function Index() {
               seriedade e profissionalismo que nos caracterizam em tudo o que fazemos.
             </p>
             <p className="sal-body">
-              O SAL Mindful Studio é, em Espinho, o espaço onde o movimento deixa de ser mais uma
+              O SAL — Mindful Studio é, em Espinho, o espaço onde o movimento deixa de ser mais uma
               tarefa do dia e passa a ser um momento só teu: respiração consciente, força
               construída com intenção e um corpo que aprende a mover-se sem pressa.
             </p>
