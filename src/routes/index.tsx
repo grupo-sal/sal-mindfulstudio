@@ -276,7 +276,7 @@ function Index() {
           <div className="sal-galeria sal-reveal">
             {galeria.map((g, i) => (
               <figure className="sal-galeria-item" key={g.src}>
-                <img src={g.src} alt={g.alt} loading="lazy" width={1024} height={1280} />
+                <img src={g.src} alt={g.alt} loading="lazy" width={1400} height={1120} />
                 <figcaption>{String(i + 1).padStart(2, "0")} — {g.legenda}</figcaption>
               </figure>
             ))}
