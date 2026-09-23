@@ -339,8 +339,8 @@ body {
 }
 .sal-status i { width: 7px; height: 7px; border-radius: 50%; background: var(--dourado); display: block; }
 .sal-abertura {
-  display: inline-flex; align-items: center; gap: 12px;
-  margin-bottom: 32px;
+  display: flex; width: fit-content; align-items: center; gap: 12px;
+  margin-top: 14px; margin-bottom: 32px;
   font-size: 0.68rem; letter-spacing: 0.26em; text-transform: uppercase;
   color: var(--dourado);
 }
