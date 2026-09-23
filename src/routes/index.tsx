@@ -50,13 +50,13 @@ const porque = [
 ];
 
 const horario = [
-  ["Domingo", "Encerrado"],
-  ["Segunda", "6h – 20h"],
-  ["Terça", "6h – 20h"],
-  ["Quarta", "6h – 20h"],
-  ["Quinta", "6h – 20h"],
-  ["Sexta", "6h – 20h"],
-  ["Sábado", "8h30 – 13h"],
+  ["Domingo", "7h – 20h"],
+  ["Segunda", "7h – 20h"],
+  ["Terça", "7h – 20h"],
+  ["Quarta", "7h – 20h"],
+  ["Quinta", "7h – 20h"],
+  ["Sexta", "7h – 20h"],
+  ["Sábado", "9h – 13h"],
 ];
 
 function useReveal() {
@@ -307,9 +307,9 @@ function Index() {
                 </p>
                 <div style={{ marginTop: 22, display: "flex", gap: 14, flexWrap: "wrap" }}>
                   <a
-                    href="https://www.google.com/maps/dir/?api=1&destination=Rua+Jos%C3%A9+Novo+87+4500-479+Silvalde+Espinho"
+                    href="https://www.google.com/maps/search/?api=1&query=Rua%20Jos%C3%A9%20Novo%2087%2C%204500-479%20Silvalde%2C%20Espinho"
                     target="_blank"
-                    rel="noopener"
+                    rel="noopener noreferrer"
                     className="sal-btn sal-btn-outline"
                   >
                     Como chegar
