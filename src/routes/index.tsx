@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import logoAsset from "@/assets/sal-logo-eye.jpg";
-import galeria1 from "@/assets/galeria-1.jpg";
+import logoAsset from "@/assets/sal-logo-eye.png.asset.json";
+import galeria1 from "@/assets/galeria-1.jpg.asset.json";
 import galeria2 from "@/assets/galeria-2.jpg.asset.json";
 import galeria3 from "@/assets/galeria-3.jpg.asset.json";
 import galeria4 from "@/assets/galeria-4.jpg.asset.json";
