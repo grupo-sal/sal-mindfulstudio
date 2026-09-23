@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import logoAsset from "@/assets/sal-logo-eye.png.asset.json";
-import salaGrupo from "@/assets/sala-grupo.png.asset.json";
-import reformer from "@/assets/reformer.png.asset.json";
+import salaGrupo from "@/assets/sala-grupo.jpg.asset.json";
+import reformer from "@/assets/reformer.jpg.asset.json";
 
 const galeria = [
   { src: salaGrupo.url, alt: "Sala de Aulas de Grupo do SAL Mindful Studio", legenda: "A sala" },
