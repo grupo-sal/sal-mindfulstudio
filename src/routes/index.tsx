@@ -351,19 +351,18 @@ function Index() {
 
       <section className="sal-cta">
         <div className="sal-cta-frame sal-reveal">
-          <span className="sal-eyebrow sal-cta-eyebrow">Pré-inscrição aberta</span>
+          <span className="sal-eyebrow sal-cta-eyebrow">PRÉ-INSCRIÇÕES ABERTAS</span>
           <h2>
             O teu momento <em>começa aqui.</em>
           </h2>
           <p>
-            Escolhe a aula, marca o teu lugar e vem mover-te connosco no SAL — Mindful Studio, em
-            Espinho.
+            Preço mais baixo, seguro incluído, oferta de inscrição e kit surpresa de boas-vindas. Só até à abertura.
           </p>
           <a href={MARCACOES} target="_blank" rel="noopener" className="sal-btn sal-btn-primary">
-            Pré-inscrição
+            QUERO UMA VAGA
           </a>
           <div className="sal-cta-meta">
-            <span>Vagas limitadas por aula</span>
+            <span>AULAS EM PEQUENOS GRUPOS</span>
             <span className="sal-cta-dot" />
             <span>Acompanhamento personalizado</span>
           </div>
