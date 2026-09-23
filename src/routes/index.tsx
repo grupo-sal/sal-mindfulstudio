@@ -1,12 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import logoAsset from "@/assets/sal-logo-eye.png.asset.json";
-import salaGrupo from "@/assets/sala-grupo.jpg.asset.json";
-import reformer from "@/assets/reformer.jpg.asset.json";
+import { logoDataUrl, reformerDataUrl, salaGrupoDataUrl } from "@/assets/embedded-images";
 
 const galeria = [
-  { src: salaGrupo.url, alt: "Sala de Aulas de Grupo do SAL Mindful Studio", legenda: "A sala" },
-  { src: reformer.url, alt: "Reformer de Pilates no estúdio", legenda: "Reformer" },
+  { src: salaGrupoDataUrl, alt: "Sala de Aulas de Grupo do SAL Mindful Studio", legenda: "A sala" },
+  { src: reformerDataUrl, alt: "Reformer de Pilates no estúdio", legenda: "Reformer" },
 ];
 
 
@@ -136,7 +134,7 @@ function Index() {
         <div className="sal-container">
           <div className="sal-hero-grid">
             <div className="sal-hero-visual sal-reveal in">
-              <img className="sal-logo-mark" src={logoAsset.url} alt="SAL Mindful Studio — logótipo" />
+              <img className="sal-logo-mark" src={logoDataUrl} alt="SAL Mindful Studio — logótipo" />
             </div>
 
             <div className="sal-reveal in">
