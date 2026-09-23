@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import { logoDataUrl, reformerDataUrl, salaGrupoDataUrl } from "@/assets/embedded-images";
 
 const galeria = [
-  { src: salaGrupoDataUrl, alt: "Sala de Aulas de Grupo do SAL Mindful Studio", legenda: "A sala" },
-  { src: reformerDataUrl, alt: "Reformer de Pilates no estúdio", legenda: "Reformer" },
+  { src: salaGrupoDataUrl, alt: "Sala de Aulas de Grupo do SAL Mindful Studio", legenda: "a sala de grupo" },
+  { src: reformerDataUrl, alt: "Sala de Pilates 1:1 com Reformer no SAL Mindful Studio", legenda: "sala de pilates 1:1" },
 ];
 
 
@@ -104,7 +104,7 @@ function Index() {
       <header className={`sal-header ${scrolled ? "scrolled" : ""}`}>
         <div className="sal-container sal-nav-row">
           <a href="#topo" className="sal-logo">
-            SAL <span>·</span> Mindful Studio
+            SAL <span>—</span> Mindful Studio
           </a>
           <button className="sal-burger" aria-label="Abrir menu" onClick={() => setMenu((m) => !m)}>
             <span />
@@ -141,12 +141,15 @@ function Index() {
               <span className="sal-status">
                 <i /> Estúdio em Espinho
               </span>
+              <span className="sal-abertura">
+                <span className="linha" /> abrimos em outubro <span className="linha" />
+              </span>
               <h1>
                 O lugar onde <em>voltas</em> a ti.
               </h1>
               <p className="sal-lead">
-                Yoga, Pilates e Aulas de Grupo em Espinho, para um movimento mais consciente, respiração controlada
-                e mobilidade sem esforço. Com proximidade, seriedade e o profissionalismo que nos
+                Aulas em pequenos grupos, Yoga e Pilates em Espinho, para um movimento mais consciente, respiração
+                controlada e mobilidade sem esforço. Com proximidade, seriedade e o profissionalismo que nos
                 caracteriza.
               </p>
               <div className="sal-hero-actions">
@@ -342,7 +345,7 @@ function Index() {
 
       <section className="sal-cta">
         <div className="sal-cta-frame sal-reveal">
-          <span className="sal-eyebrow sal-cta-eyebrow">Marcações</span>
+          <span className="sal-eyebrow sal-cta-eyebrow">Pré-inscrição aberta</span>
           <h2>
             O teu momento <em>começa aqui.</em>
           </h2>
@@ -367,9 +370,9 @@ function Index() {
           <div className="sal-footer-grid">
             <div>
               <span className="sal-logo">
-                SAL <span>·</span> Mindful Studio
+                SAL <span>—</span> Mindful Studio
               </span>
-              <p style={{ maxWidth: "34ch" }}>Yoga, Pilates e Aulas de Grupo em Espinho. O lugar onde voltas a ti.</p>
+              <p style={{ maxWidth: "34ch" }}>Aulas em pequenos grupos, Yoga e Pilates em Espinho. O lugar onde voltas a ti.</p>
             </div>
             <div>
               <div className="sal-col-title">Navegação</div>
