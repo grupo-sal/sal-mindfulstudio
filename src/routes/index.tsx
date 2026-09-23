@@ -50,13 +50,13 @@ const porque = [
 ];
 
 const horario = [
-  ["Domingo", "Encerrado"],
-  ["Segunda", "6h – 20h"],
-  ["Terça", "6h – 20h"],
-  ["Quarta", "6h – 20h"],
-  ["Quinta", "6h – 20h"],
-  ["Sexta", "6h – 20h"],
-  ["Sábado", "8h30 – 13h"],
+  ["Domingo", "7h – 20h"],
+  ["Segunda", "7h – 20h"],
+  ["Terça", "7h – 20h"],
+  ["Quarta", "7h – 20h"],
+  ["Quinta", "7h – 20h"],
+  ["Sexta", "7h – 20h"],
+  ["Sábado", "9h – 13h"],
 ];
 
 function useReveal() {
