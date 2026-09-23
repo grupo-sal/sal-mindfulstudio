@@ -138,12 +138,18 @@ function Index() {
             </div>
 
             <div className="sal-reveal in">
-              <span className="sal-status">
-                <i /> Estúdio em Espinho
-              </span>
-              <span className="sal-abertura">
-                <span className="linha" /> abrimos em outubro <span className="linha" />
-              </span>
+              <div style={{ marginBottom: 28 }}>
+                <div>
+                  <span className="sal-status" style={{ marginBottom: 0 }}>
+                    <i /> Estúdio em Espinho
+                  </span>
+                </div>
+                <div style={{ marginTop: 14 }}>
+                  <span className="sal-abertura" style={{ display: "inline-flex", margin: 0 }}>
+                    <span className="linha" /> abrimos em outubro <span className="linha" />
+                  </span>
+                </div>
+              </div>
               <h1>
                 O lugar onde <em>voltas</em> a ti.
               </h1>
