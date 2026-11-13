@@ -338,13 +338,6 @@ body {
   color: var(--creme-suave); margin-bottom: 14px;
 }
 .sal-status i { width: 7px; height: 7px; border-radius: 50%; background: var(--dourado); display: block; }
-.sal-abertura {
-  display: flex; width: fit-content; align-items: center; gap: 12px;
-  margin-top: 14px; margin-bottom: 32px;
-  font-size: 0.68rem; letter-spacing: 0.26em; text-transform: uppercase;
-  color: var(--dourado);
-}
-.sal-abertura .linha { width: 30px; height: 1px; background: oklch(0.73 0.077 85 / 55%); }
 .sal-scroll-cue {
   position: absolute; left: 32px; bottom: 36px; display: flex; align-items: center; gap: 12px;
   font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--creme-suave);

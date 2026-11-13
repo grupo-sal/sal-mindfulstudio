@@ -144,11 +144,6 @@ function Index() {
                     <i /> Estúdio em Espinho
                   </span>
                 </div>
-                <div style={{ marginTop: 14 }}>
-                  <span className="sal-abertura" style={{ display: "inline-flex", margin: 0 }}>
-                    <span className="linha" /> abrimos em outubro <span className="linha" />
-                  </span>
-                </div>
               </div>
               <h1>
                 O lugar onde <em>voltas</em> a ti.
