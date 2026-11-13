@@ -27,7 +27,6 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const MARCACOES = "https://tally.so/r/KYRAJM";
 const WHATSAPP = "https://wa.link/uqkyxl";
 
 const aulas = [
@@ -376,8 +375,8 @@ function Index() {
                   </a>
                 </li>
                 <li>
-                  <a href={MARCACOES} target="_blank" rel="noopener">
-                    Pré-inscrição
+                  <a href={WHATSAPP} target="_blank" rel="noopener">
+                    Inscrever-me
                   </a>
                 </li>
                 <li>Rua José Novo, n.º 87, Espinho</li>
