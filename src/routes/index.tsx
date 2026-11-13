@@ -124,7 +124,7 @@ function Index() {
               className="sal-btn sal-btn-outline"
               style={{ padding: "11px 24px" }}
             >
-              Pré-inscrição
+              INSCRIÇÃO
             </a>
           </nav>
         </div>
