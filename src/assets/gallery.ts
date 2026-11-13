@@ -16,9 +16,32 @@ import photo08 from './estudio-08-1080.webp.asset.json';
 import small08 from './estudio-08-640.webp.asset.json';
 import photo09 from './estudio-09-zoom-1080.webp.asset.json';
 import small09 from './estudio-09-zoom-640.webp.asset.json';
+import fallback01 from './gallery-fallbacks/estudio-01.jpg';
+import fallback02 from './gallery-fallbacks/estudio-02.jpg';
+import fallback03 from './gallery-fallbacks/estudio-03.jpg';
+import fallback04 from './gallery-fallbacks/estudio-04.jpg';
+import fallback05 from './gallery-fallbacks/estudio-05.jpg';
+import fallback06 from './gallery-fallbacks/estudio-06.jpg';
+import fallback07 from './gallery-fallbacks/estudio-07.jpg';
+import fallback08 from './gallery-fallbacks/estudio-08.jpg';
+import fallback09 from './gallery-fallbacks/estudio-09.jpg';
+
+const fallbacks: Record<string, string> = {
+  [photo01.url]: fallback01,
+  [photo02.url]: fallback02,
+  [photo03.url]: fallback03,
+  [photo04.url]: fallback04,
+  [photo05.url]: fallback05,
+  [photo06.url]: fallback06,
+  [photo07.url]: fallback07,
+  [photo08.url]: fallback08,
+  [photo09.url]: fallback09,
+};
 
 function photo(large: { url: string }, small: { url: string }, legenda: string, alt: string) {
-  return { src: large.url, srcSet: `${small.url} 640w, ${large.url} 1080w`, legenda, alt };
+  const fallback = fallbacks[large.url];
+  if (!fallback) throw new Error('Gallery photo requires a bundled fallback');
+  return { src: large.url, srcSet: `${small.url} 640w, ${large.url} 1080w`, fallback, legenda, alt };
 }
 
 export const galeria = [

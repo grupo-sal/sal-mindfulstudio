@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { logoDataUrl } from "@/assets/embedded-images";
 import { galeria } from "@/assets/gallery";
+import { GalleryImage } from "@/components/gallery-image";
 
 
 const TITLE = "SAL — Mindful Studio | Yoga, Pilates e Aulas de Grupo em Espinho";
@@ -273,16 +274,7 @@ function Index() {
           <div className="sal-galeria">
             {galeria.map((g, i) => (
               <figure className="sal-galeria-item sal-reveal" key={g.src}>
-                <img
-                  src={g.src}
-                  srcSet={g.srcSet}
-                  sizes="(max-width: 700px) calc(100vw - 64px), (max-width: 1180px) calc((100vw - 82px) / 2), 549px"
-                  alt={g.alt}
-                  loading="lazy"
-                  decoding="async"
-                  width={1080}
-                  height={1440}
-                />
+                <GalleryImage photo={g} />
                 <figcaption>{String(i + 1).padStart(2, "0")} — {g.legenda}</figcaption>
               </figure>
             ))}
