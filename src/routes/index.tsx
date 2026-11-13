@@ -344,27 +344,6 @@ function Index() {
         </div>
       </section>
 
-      <section className="sal-cta">
-        <div className="sal-cta-frame sal-reveal">
-          <span className="sal-eyebrow sal-cta-eyebrow">PRÉ-INSCRIÇÕES ABERTAS</span>
-          <h2>
-            O teu momento <em>começa aqui.</em>
-          </h2>
-          <p>
-            Preço mais baixo, seguro incluído, oferta de inscrição e kit surpresa de boas-vindas. Só até à abertura.
-          </p>
-          <a href={MARCACOES} target="_blank" rel="noopener" className="sal-btn sal-btn-primary">
-            QUERO UMA VAGA
-          </a>
-          <div className="sal-cta-meta">
-            <span>PEQUENOS GRUPOS</span>
-            <span className="sal-cta-dot" />
-            <span>PILATES 1:1</span>
-          </div>
-        </div>
-      </section>
-
-
       <footer className="sal-footer">
         <div className="sal-container">
           <div className="sal-footer-grid">

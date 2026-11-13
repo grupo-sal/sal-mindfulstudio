@@ -408,11 +408,7 @@ body {
 .sal-mapa iframe { width: 100%; height: 100%; border: 0; display: block; }
 @media (max-width: 900px) { .sal-mapa { aspect-ratio: 16/10; } }
 
-/* cta + rodapé */
-.sal-cta { text-align: center; padding: 140px 0; position: relative; overflow: hidden; }
-.sal-cta h2 { font-size: clamp(2.2rem, 5vw, 3.6rem); max-width: 16ch; margin: 0 auto; }
-.sal-cta h2 em { font-style: italic; color: var(--dourado); font-weight: 400; }
-.sal-cta p { color: var(--creme-suave); max-width: 48ch; margin: 22px auto 44px; }
+/* rodapé */
 .sal-footer { background: var(--verde-escuro); padding: 70px 0 34px; border-top: 1px solid var(--border); }
 .sal-footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 50px; }
 @media (max-width: 700px) { .sal-footer-grid { grid-template-columns: 1fr; gap: 34px; } }
@@ -451,33 +447,3 @@ body {
   transition: gap 0.4s var(--ease), border-color 0.4s var(--ease);
 }
 .sal-galeria-more a:hover { gap: 18px; border-bottom-color: var(--dourado); }
-
-/* cta refinado */
-.sal-cta {
-  background:
-    radial-gradient(ellipse 50% 60% at 50% 0%, oklch(0.73 0.077 85 / 8%), transparent 70%),
-    var(--verde);
-  padding: 160px 24px;
-}
-.sal-cta-frame {
-  max-width: 780px; margin: 0 auto; position: relative;
-  padding: 76px 48px 68px;
-  border: 1px solid oklch(0.73 0.077 85 / 30%);
-  background: oklch(0.245 0.032 118 / 45%);
-}
-@media (max-width: 640px) { .sal-cta-frame { padding: 56px 24px 48px; } }
-.sal-cta-frame::before,
-.sal-cta-frame::after {
-  content: ""; position: absolute; width: 1px; height: 34px; background: var(--dourado);
-  left: 50%;
-}
-.sal-cta-frame::before { top: -17px; }
-.sal-cta-frame::after { bottom: -17px; }
-.sal-cta-eyebrow { display: block; margin-bottom: 22px; }
-.sal-cta-meta {
-  margin-top: 34px; display: flex; align-items: center; justify-content: center;
-  gap: 14px; flex-wrap: wrap;
-  font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase;
-  color: var(--creme-suave); opacity: 0.8;
-}
-.sal-cta-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--dourado); }
