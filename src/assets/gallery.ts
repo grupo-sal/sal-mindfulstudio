@@ -10,8 +10,6 @@ import photo05 from './estudio-05-1080.webp.asset.json';
 import small05 from './estudio-05-640.webp.asset.json';
 import photo06 from './estudio-06-1080.webp.asset.json';
 import small06 from './estudio-06-640.webp.asset.json';
-import photo07 from './estudio-07-1080.webp.asset.json';
-import small07 from './estudio-07-640.webp.asset.json';
 import photo08 from './estudio-08-1080.webp.asset.json';
 import small08 from './estudio-08-640.webp.asset.json';
 import photo09 from './estudio-09-zoom-1080.webp.asset.json';
@@ -22,7 +20,6 @@ import fallback03 from './gallery-fallbacks/estudio-03.jpg';
 import fallback04 from './gallery-fallbacks/estudio-04.jpg';
 import fallback05 from './gallery-fallbacks/estudio-05.jpg';
 import fallback06 from './gallery-fallbacks/estudio-06.jpg';
-import fallback07 from './gallery-fallbacks/estudio-07.jpg';
 import fallback08 from './gallery-fallbacks/estudio-08.jpg';
 import fallback09 from './gallery-fallbacks/estudio-09.jpg';
 
@@ -33,7 +30,6 @@ const fallbacks: Record<string, string> = {
   [photo04.url]: fallback04,
   [photo05.url]: fallback05,
   [photo06.url]: fallback06,
-  [photo07.url]: fallback07,
   [photo08.url]: fallback08,
   [photo09.url]: fallback09,
 };
@@ -53,5 +49,4 @@ export const galeria = [
   photo(photo04, small04, 'prontos para a aula', 'Tapetes de Pilates com bolas, aros e blocos de cortiça'),
   photo(photo05, small05, 'os detalhes do movimento', 'Vista de cima dos tapetes e acessórios de Pilates'),
   photo(photo06, small06, 'luz e movimento', 'Sala de Aulas de Grupo com espelho e iluminação de teto'),
-  photo(photo07, small07, 'pilates de aparelhos', 'Pormenor dos aparelhos de parede e acessórios de Pilates'),
 ];
