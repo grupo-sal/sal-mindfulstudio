@@ -43,7 +43,7 @@ function photo(large: { url: string }, small: { url: string }, legenda: string, 
 export const galeria = [
   photo(photo09, small09, 'PILATES DE APARELHOS EM GRUPO', 'Vista ampla da sala de Pilates de aparelhos'),
   photo(photo01, small01, 'a sala de grupo', 'Sala de Aulas de Grupo com tapetes e equipamento do SAL — Mindful Studio'),
-  photo(photo08, small08, 'PILATES 1:1', 'Sala de Pilates com aparelhos de parede e tapetes no SAL — Mindful Studio'),
+  photo(photo08, small08, 'PILATES EM GRUPOS DE 3', 'Sala de Pilates com aparelhos de parede e tapetes no SAL — Mindful Studio'),
   photo(photo02, small02, 'a entrada', 'Entrada envidraçada com planta e tapete geométrico'),
   photo(photo03, small03, 'SALA DE PILATES 1:1 (SOON)', 'Tapete geométrico junto ao espelho arqueado e à parede verde'),
   photo(photo04, small04, 'MATERIAIS DE GRUPO', 'Tapetes de Pilates com bolas, aros e blocos de cortiça'),
