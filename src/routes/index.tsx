@@ -31,12 +31,12 @@ const MARCACOES = "https://tally.so/r/KYRAJM";
 
 const aulas = [
   { icon: "💪", nome: "Core", texto: "Aula curta, intensa e eficaz, 100% dedicada a fortalecer a zona abdominal e lombar — para melhor postura e menos dores nas costas." },
-  { icon: "💦", nome: "Flow", texto: "A aula mais intensa do estúdio: sequência rápida e dinâmica, sem pausas longas, só transições e ritmo até ao fim." },
-  { icon: "🫴", nome: "Pilates de Solo", texto: "Só tu e o tapete. Controlo da respiração, ativação do core e movimentos precisos que fortalecem sem impacto nas articulações." },
-  { icon: "🍃", nome: "Reset", texto: "Meditação guiada para reprogramar corpo e mente, sem pressa. Respiração consciente e regulação do sistema nervoso." },
+  { icon: "💦", nome: "Flow", texto: "A aula mais intensa do estúdio: sequência rápida e dinâmica, sem pausas longas, só transições e ritmo motivante até ao fim." },
+  { icon: "🫴", nome: "Pilates de Solo", texto: "Só tu e o tapete. Controlo da respiração, ativação do core e movimentos precisos que fortalecem, sem impacto, nas articulações." },
+  { icon: "🍃", nome: "Reset (SOON)", texto: "Meditação guiada para reprogramar corpo e mente, sem pressa. Respiração consciente e regulação do sistema nervoso." },
   { icon: "🧘", nome: "Yoga", texto: "Corpo e mente num só. Flexibilidade, equilíbrio e força — para todos os níveis, do primeiro toque no tapete a quem já o sabe de cor." },
   { icon: "✨", nome: "Sculpt", texto: "Séries de repetições controladas com cargas leves, para tonificar pernas, glúteos e braços sem nunca exagerar." },
-  { icon: "🙆‍♀️", nome: "Stretch", texto: "Alonga, alivia a tensão acumulada e devolve amplitude às articulações, com trabalho de mobilidade guiado e progressivo." },
+  { icon: "🙆‍♀️", nome: "Stretch (SOON)", texto: "Alonga, alivia a tensão acumulada e devolve amplitude às articulações, com trabalho de mobilidade guiado e progressivo." },
   { icon: "🎯", nome: "Pilates de Aparelhos", texto: "Reformer e Wall Units, em grupo ou sessões privadas. Força, postura e flexibilidade com precisão e segurança — ideal também para recuperação de lesões." },
 ];
 
@@ -44,7 +44,7 @@ const porque = [
   { mark: "I", titulo: "Acompanhamento ao teu ritmo", texto: "Sejas principiante ou já experiente, cada aula adapta-se a ti — nunca o contrário." },
   { mark: "II", titulo: "Equipamento profissional", texto: "Reformer e Wall Units para um Pilates de aparelhos completo, em grupo ou privado." },
   { mark: "III", titulo: "Um estúdio, dois mundos", texto: "A energia do treino e o silêncio da meditação guiada, sob o mesmo teto." },
-  { mark: "IV", titulo: "Horários que encaixam no teu dia", texto: "Aulas de manhã cedo ao final da tarde, de segunda a sábado. Escolhes o horário, nós tratamos do resto." },
+  { mark: "IV", titulo: "Horários que encaixam no teu dia", texto: "Aulas de manhã cedo e ao final da tarde, de segunda a sábado. Escolhes o horário, nós tratamos do resto." },
 ];
 
 const horario = [
@@ -150,12 +150,11 @@ function Index() {
               </h1>
               <p className="sal-lead">
                 Aulas em pequenos grupos, Yoga e Pilates em Espinho, para um movimento mais consciente, respiração
-                controlada e mobilidade sem esforço. Com proximidade, seriedade e o profissionalismo que nos
-                caracteriza.
+                controlada e mobilidade sem esforço.
               </p>
               <div className="sal-hero-actions">
                 <a href={MARCACOES} target="_blank" rel="noopener" className="sal-btn sal-btn-primary">
-                  Pré-inscrição
+                  QUERO INSCREVER-ME
                 </a>
                 <a href="#aulas" className="sal-btn sal-btn-outline">
                   Ver as aulas
@@ -204,7 +203,7 @@ function Index() {
               <div className="sal-pilar">
                 <span className="num">03</span>
                 <h4>Profissionalismo</h4>
-                <p>O rigor técnico do Pilates de aparelhos aliado à presença consciente das nossas aulas de bem-estar.</p>
+                <p>O rigor técnico do Yoga e Pilates, aliado à presença consciente das nossas aulas de bem-estar.</p>
               </div>
             </div>
           </div>
@@ -218,7 +217,7 @@ function Index() {
             <div className="sal-divider" />
             <h2 className="sal-h2">Um movimento para cada momento.</h2>
             <p className="sal-body" style={{ marginTop: 18 }}>
-              Da intensidade do Flow ao silêncio do Reset — encontra a aula que o teu corpo pede
+              Da intensidade do Flow ao silêncio do Yoga — encontra a aula que o teu corpo pede
               hoje.
             </p>
           </div>
