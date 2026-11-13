@@ -28,6 +28,7 @@ export const Route = createFileRoute("/")({
 });
 
 const MARCACOES = "https://tally.so/r/KYRAJM";
+const WHATSAPP = "https://wa.link/uqkyxl";
 
 const aulas = [
   { icon: "💪", nome: "Core", texto: "Aula curta, intensa e eficaz, 100% dedicada a fortalecer a zona abdominal e lombar — para melhor postura e menos dores nas costas." },
@@ -118,7 +119,7 @@ function Index() {
               </a>
             ))}
             <a
-              href={MARCACOES}
+              href={WHATSAPP}
               target="_blank"
               rel="noopener"
               className="sal-btn sal-btn-outline"
@@ -153,7 +154,7 @@ function Index() {
                 controlada e mobilidade sem esforço.
               </p>
               <div className="sal-hero-actions">
-                <a href={MARCACOES} target="_blank" rel="noopener" className="sal-btn sal-btn-primary">
+                <a href={WHATSAPP} target="_blank" rel="noopener" className="sal-btn sal-btn-primary">
                   QUERO INSCREVER-ME
                 </a>
                 <a href="#aulas" className="sal-btn sal-btn-outline">
