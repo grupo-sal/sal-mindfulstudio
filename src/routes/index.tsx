@@ -1,11 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { logoDataUrl, reformerDataUrl, salaGrupoDataUrl } from "@/assets/embedded-images";
-
-const galeria = [
-  { src: salaGrupoDataUrl, alt: "Sala de Aulas de Grupo do SAL — Mindful Studio", legenda: "a sala de grupo" },
-  { src: reformerDataUrl, alt: "Sala de Pilates 1:1 com Reformer no SAL — Mindful Studio", legenda: "sala de pilates 1:1" },
-];
+import { logoDataUrl } from "@/assets/embedded-images";
+import { galeria } from "@/assets/gallery";
 
 
 const TITLE = "SAL — Mindful Studio | Yoga, Pilates e Aulas de Grupo em Espinho";
@@ -274,10 +270,19 @@ function Index() {
             </p>
           </div>
 
-          <div className="sal-galeria sal-reveal">
+          <div className="sal-galeria">
             {galeria.map((g, i) => (
-              <figure className="sal-galeria-item" key={g.src}>
-                <img src={g.src} alt={g.alt} loading="lazy" width={1400} height={1120} />
+              <figure className="sal-galeria-item sal-reveal" key={g.src}>
+                <img
+                  src={g.src}
+                  srcSet={g.srcSet}
+                  sizes="(max-width: 700px) calc(100vw - 64px), (max-width: 1180px) calc((100vw - 82px) / 2), 549px"
+                  alt={g.alt}
+                  loading="lazy"
+                  decoding="async"
+                  width={1080}
+                  height={1440}
+                />
                 <figcaption>{String(i + 1).padStart(2, "0")} — {g.legenda}</figcaption>
               </figure>
             ))}

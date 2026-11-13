@@ -8,3 +8,6 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep gallery photo metadata in `src/assets/gallery.ts`, using CDN WebP pointers at 640px and 1080px with responsive sources and lazy loading; this avoids original photo payloads and preserves portrait framing.
+- Reveal gallery figures individually rather than the entire grid; a long gallery can exceed the observer's visibility threshold.
